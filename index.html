@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Rock Paper Scissors</h1>
+
+  <div class="choices">
+    <div class="choice" id="rock"><img src=".\assest\rock.png" alt=""></div>
+    <div class="choice" id="scissors"><img src="./assest/scissors.png" alt="scissors"></div>
+    <div class="choice" id="paper"><img src="./assest/paper.png" alt="paper"></div>
+  </div>
+
+  <div class="score-board">
+    <div class="score">
+      <p id="user-score">0</p>
+      <p>You</p>
+    </div>
+    <div class="score">
+      <p id="comp-score">0</p>
+      <p>Comp</p>
+    </div>
+  </div>
+
+  <div class="msg-container">
+    <p id="msg">Play Your Move</p>
+  </div>
+
+  <button id="reset-btn" class="play-btn">Reset Game</button>
+
+  <!-- Optional audio for sounds -->
+  <audio id="click-sound" src="https://freesound.org/data/previews/256/256113_3263906-lq.mp3" preload="auto"></audio>
+  <audio id="win-sound" src="https://freesound.org/data/previews/320/320655_5260872-lq.mp3" preload="auto"></audio>
+
+  <!-- Floating particles -->
+  <span class="floating-particle" style="width:15px; height:15px; background:#fff; left:10vw; top:90vh; animation-delay: 0s;"></span>
+  <span class="floating-particle" style="width:10px; height:10px; background:#f9f9f9; left:40vw; top:100vh; animation-delay: 6s;"></span>
+  <span class="floating-particle" style="width:20px; height:20px; background:#ddd; left:70vw; top:95vh; animation-delay: 12s;"></span>
+
+  <script src="first.js"></script>
+</body>
+</html>
